@@ -1,3 +1,5 @@
+package edu;
+
 public class Professor {
     private String nome;
     private String materia;

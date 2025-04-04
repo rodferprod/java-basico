@@ -1,3 +1,5 @@
+package edu;
+
 public enum EstadosBrasileiros {
     SAO_PAULO("SP", "São Paulo"),
     RIO_JANEIRO("RJ", "Rio de Janeiro"),
