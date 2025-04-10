@@ -1,6 +1,6 @@
 public record Person(String name, int age) {
 
-    public static int height;
+    private static int height;
 
     public Person {
 
