@@ -1,10 +1,13 @@
-public abstract class Ingresso {
+public class Ingresso {
 
     protected double valor;
     protected String filme;
     protected boolean dublado;
+    protected int quantidadeIngressos = 1;
 
-    public abstract double getValorTotal();
+    public double getValorTotal() {
+        return this.valor * this.quantidadeIngressos;
+    };
 
     public void setValor(double valor) {
         this.valor = valor;
@@ -28,5 +31,13 @@ public abstract class Ingresso {
 
     public boolean getDublado() {
         return this.dublado;
+    }
+
+    public int getQuantidadeIngressos() {
+        return quantidadeIngressos;
+    }
+
+    public void setQuantidadeIngressos(int quantidadeIngressos) {
+        this.quantidadeIngressos = quantidadeIngressos;
     }
 }
