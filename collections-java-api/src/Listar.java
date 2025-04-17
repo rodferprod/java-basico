@@ -1,4 +1,4 @@
-import list.ListaTarefa;
+import listar.ListaTarefa;
 
 public class Listar {
     public static void main(String[] args) throws Exception {
