@@ -17,7 +17,7 @@ public class CatalogoLivros {
     // Método que retorna uma lista de livros de um determinado autor
     public List<Livro> pesquisarLivrosPorAutor(String autor) {
         List<Livro> livrosPorAutor = new ArrayList<>();
-        if (checkList()) {
+        if (checkItensLista()) {
             for (Livro livro : this.listLivros) {
                 if (livro.getAutor().equalsIgnoreCase(autor)) {
                     livrosPorAutor.add(livro);
@@ -35,7 +35,7 @@ public class CatalogoLivros {
     // Método que retorna uma lista de livros entre dois anos
     public List<Livro> pesquisarLivrosEntreDoisAnos(int anoInicio, int anoFinal) {
         List<Livro> livrosEntreDoisAnos = new ArrayList<>();
-        if (checkList()) {
+        if (checkItensLista()) {
             for (Livro livro : this.listLivros) {
                 if (livro.getAnoPublicacao() >= anoInicio && livro.getAnoPublicacao() <= anoFinal) {
                     livrosEntreDoisAnos.add(livro);
@@ -53,7 +53,7 @@ public class CatalogoLivros {
 
     public Livro pesquisaLivroPorTitulo(String titulo) {
         Livro livroPorTitulo = null;
-        if (checkList()) {
+        if (checkItensLista()) {
             for (Livro livro : this.listLivros) {
                 if (livro.getTitulo().equalsIgnoreCase(titulo)) {
                     livroPorTitulo = livro;
@@ -70,7 +70,7 @@ public class CatalogoLivros {
         return livroPorTitulo;
     }
 
-    private boolean checkList() {
+    private boolean checkItensLista() {
         if (this.listLivros.isEmpty()) {
             System.out.println("Lista de livros vazia!");
             return false;
