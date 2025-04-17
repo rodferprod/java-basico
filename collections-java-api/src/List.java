@@ -1,6 +1,6 @@
 import list.ListaTarefa;
 
-public class App {
+public class List {
     public static void main(String[] args) throws Exception {
         ListaTarefa listaTarefa = new ListaTarefa();
 

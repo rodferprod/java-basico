@@ -29,6 +29,11 @@ public class ListaTarefa {
         // Percorrendo a lista de tarefas para comparar a
         // descrição e reservar os itens que serão removidos
         for (Tarefa tarefa : this.listaTarefas) {
+            if (this.listaTarefas.isEmpty()) {
+                System.out.println("Lista de tarefas vazia!");
+                return;
+            }
+
             if (tarefa.getDescricao().equalsIgnoreCase(descricao)) {
                 tarefasRemover.add(tarefa);
             }
