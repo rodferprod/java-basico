@@ -1,4 +1,4 @@
-package conjunto;
+package conjunto.convidados;
 
 import java.util.Objects;
 

@@ -1,13 +1,17 @@
-package conjunto;
+package conjunto.contatos;
 
 import java.util.HashSet;
 import java.util.Set;
 
-public class AgendaContatos {
+public class ConjuntoContatos {
 
     private Set<Contato> contatoSet;
 
-    public AgendaContatos() {
+    public ConjuntoContatos() {
+        // A implementação HashSet da interface Set permite a inclusão de
+        // itens indexados e únicos, que possibilita melhor desempenho nas buscas.
+        // São inseridos aleatoriamente e sua ordem é mantida, não sendo possível
+        // modificá-la.
         this.contatoSet = new HashSet<>();
     }
 

@@ -1,4 +1,4 @@
-package conjunto;
+package conjunto.contatos;
 
 import java.util.Objects;
 

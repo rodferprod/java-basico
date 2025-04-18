@@ -1,4 +1,4 @@
-import conjunto.ConjuntoConvidados;
+import conjunto.convidados.ConjuntoConvidados;
 
 public class ConjuntoListar {
     public static void main(String[] args) {

@@ -1,27 +1,27 @@
-import conjunto.AgendaContatos;
+import conjunto.contatos.ConjuntoContatos;
 
 public class ConjuntoPesquisar {
     public static void main(String[] args) {
-        AgendaContatos agendaContatos = new AgendaContatos();
+        ConjuntoContatos conjuntoContatos = new ConjuntoContatos();
 
-        agendaContatos.imprimirContatos();
+        conjuntoContatos.imprimirContatos();
 
-        agendaContatos.adicionarContato("Rodrigo", 4565468);
-        agendaContatos.adicionarContato("Rafael", 5645665);
-        agendaContatos.adicionarContato("Ricardo", 4798768);
-        agendaContatos.adicionarContato("Rômulo", 98564874);
-        agendaContatos.adicionarContato("Adriana", 54231234);
-        agendaContatos.adicionarContato("Rodrigo", 87655676);
-        agendaContatos.adicionarContato("Rodrigo José", 58687667);
-        agendaContatos.adicionarContato("Rodrigo Guimarães", 321342334);
-        agendaContatos.adicionarContato("Rodrigo Ferreira", 521314254);
+        conjuntoContatos.adicionarContato("Rodrigo", 4565468);
+        conjuntoContatos.adicionarContato("Rafael", 5645665);
+        conjuntoContatos.adicionarContato("Ricardo", 4798768);
+        conjuntoContatos.adicionarContato("Rômulo", 98564874);
+        conjuntoContatos.adicionarContato("Adriana", 54231234);
+        conjuntoContatos.adicionarContato("Rodrigo", 87655676);
+        conjuntoContatos.adicionarContato("Rodrigo José", 58687667);
+        conjuntoContatos.adicionarContato("Rodrigo Guimarães", 321342334);
+        conjuntoContatos.adicionarContato("Rodrigo Ferreira", 521314254);
 
-        agendaContatos.imprimirContatos();
+        conjuntoContatos.imprimirContatos();
 
-        System.out.println(agendaContatos.pesquisarNome("Rodrigo"));
+        System.out.println(conjuntoContatos.pesquisarNome("Rodrigo"));
 
-        System.out.println(agendaContatos.atualizarContato("rodrigo ferreira", 9999999));
+        System.out.println(conjuntoContatos.atualizarContato("rodrigo ferreira", 9999999));
 
-        agendaContatos.imprimirContatos();
+        conjuntoContatos.imprimirContatos();
     }
 }

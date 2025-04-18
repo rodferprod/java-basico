@@ -1,4 +1,4 @@
-package conjunto;
+package conjunto.convidados;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -8,6 +8,10 @@ public class ConjuntoConvidados {
     private Set<Convidado> convidadosSet;
 
     public ConjuntoConvidados() {
+        // A implementação HashSet da interface Set permite a inclusão de
+        // itens indexados e únicos, que possibilita melhor desempenho nas buscas.
+        // São inseridos aleatoriamente e sua ordem é mantida, não sendo possível
+        // modificá-la.
         this.convidadosSet = new HashSet<>();
     }
 
