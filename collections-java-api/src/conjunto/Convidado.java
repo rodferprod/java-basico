@@ -39,6 +39,8 @@ public class Convidado {
         return Objects.hash(this.getCodigoConvite());
     }
 
+    // Sobrescrevendo o método .toString() para que este retorne
+    // a descrição do contato ao converter o objeto para string
     @Override
     public String toString() {
         return this.nome + "|" + this.codigoConvite;

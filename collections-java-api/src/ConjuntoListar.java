@@ -1,6 +1,6 @@
 import conjunto.ConjuntoConvidados;
 
-public class Conjunto {
+public class ConjuntoListar {
     public static void main(String[] args) {
 
         ConjuntoConvidados conjuntoConvidados = new ConjuntoConvidados();

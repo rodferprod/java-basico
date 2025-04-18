@@ -1,6 +1,6 @@
 import pesquisa.CatalogoLivros;
 
-public class Pesquisa {
+public class Pesquisar {
     public static void main(String[] args) {
         CatalogoLivros catalogoLivros = new CatalogoLivros();
 
