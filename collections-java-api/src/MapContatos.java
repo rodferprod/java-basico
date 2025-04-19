@@ -1,6 +1,6 @@
-import map.AgendaContatos;
+import map.contatos.AgendaContatos;
 
-public class Map {
+public class MapContatos {
     public static void main(String[] args) {
         AgendaContatos agendaContatos = new AgendaContatos();
 

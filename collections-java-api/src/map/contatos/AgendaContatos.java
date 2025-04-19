@@ -1,10 +1,15 @@
-package map;
+package map.contatos;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class AgendaContatos {
 
+    // A classe Map trabalha com pares Chave=Valor e já possui mecanismos
+    // para assegurar que não haverá nenhum item repetido, pois a chave
+    // (declarada aqui como uma String) sempre será única no conjunto.
+    // Os valores serão classes do tipo Integer (OBS: Map não aceita tipos
+    // primitivos)
     private Map<String, Integer> agendaContatosMap;
 
     public AgendaContatos() {
