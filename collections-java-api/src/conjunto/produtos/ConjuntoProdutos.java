@@ -34,8 +34,8 @@ public class ConjuntoProdutos {
     }
 
     public Set<Produto> ordenarProdutosPorValor() {
-        // Quando passamos para o TreeSet uma classe que implementa um Comparator
-        // precisamos usar o método .addAll() passando o Set completo de produtos
+        // Dessa vez passamos para o TreeSet uma classe que implementa um Comparator.
+        // Agora precisamos usar o método .addAll() passando o Set completo de produtos
         // para ocorrer a ordenação definida em nossa implementação do Comparator
         Set<Produto> produtosPorValor = new TreeSet<>(new ComparatorPorValor());
         produtosPorValor.addAll(this.produtoSet);
